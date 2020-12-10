@@ -1,7 +1,8 @@
 *, body {
   box-sizing: border-box;
   font-family: arial, sans-serif;
-  margin-top: 20px;
+  font-size: 13px;
+  /*margin-top: 20px;*/
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -10,17 +11,17 @@
   box-sizing: border-box;
   background-color: transparent;
   height: 50px;
-  padding-top: 15px;
+  padding-top: 8px;
   padding-bottom: 10px;
+  margin-top: 20px;
 }
 #navbar a {
   text-decoration: none;
-  color: black;
+  color: rgba(0,0,0,0.87);
 }
 #navbar a:hover {
   cursor: pointer;
 }
-
 #navbar .btn {
   color: white;
 }
@@ -29,15 +30,40 @@
   margin-right:15px;
   margin-left: 0;
 }
+/*class pushes items on the navbar to the left*/
 .float-left {
   float: left;
 }
+/*class pushes items on the navbar to the right*/
 .float-right {
   float: right;
 }
+/*class for 'sign in' button*/
 .btn {
   background-color:#4285f4;;
   padding: 10px 20px;
   width: 50px;
   border-radius: 3px;
+}
+.img-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+#main-logo {
+  max-width: 100%;
+}
+.searchbox-container {
+  display: block;
+  text-align: center;
+  width: 100%;
+} 
+#textfield {
+  diplay: flex;
+  height: 34px;
+  line-height: 34px;
+  width: 270px;
 }
