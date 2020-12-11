@@ -14,6 +14,7 @@
   padding-top: 8px;
   padding-bottom: 10px;
   margin-top: 20px;
+  background-color: lightgreen;
 }
 #navbar a {
   text-decoration: none;
@@ -61,9 +62,20 @@
   text-align: center;
   width: 100%;
 } 
+/*Search box here*/
 #textfield {
   diplay: flex;
   height: 34px;
   line-height: 34px;
   width: 270px;
+}
+/*class for app icon that should be on the Navbar*/
+.app-img {
+  width: 30px; 
+  height: 30px;
+  background: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png) -132px -38px;
+  background-repeat: no-repeat;
+  border: 0;
+  text-decoration: none;
+  outline: none;
 }
