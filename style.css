@@ -61,7 +61,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  padding-top: 80px;
+  padding-top: 85px;
   padding-bottom: 35px;
 }
 #main-logo {
@@ -76,17 +76,27 @@ body {
   margin: auto;
   border: 1px solid #dfe1e5;
   border-radius: 30px;
+  position: relative;
 } 
 /*drop shadow on:hover search box*/
 .searchbox-container:hover {
   box-shadow: 0px 0px 2px rgb(207, 206, 206);
+}
+/*maginifying icon*/
+.search-icon {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 1em;
+  top: 0.9em;
+  bottom: 1em;
 }
 /*Search box here*/
 #textfield {
   display: flex;
   height: 34px;
   line-height: 34px;
-  width: 427px;
+  width: 400px;
   border: none;
 }
 /*class for app icon that should be on the Navbar*/
@@ -167,7 +177,7 @@ body {
 .left {
   justify-content: left;
 }
-/*Media Queries*/
+/*Media Queries for tablet and phones*/
 @media only screen and (max-width: 600px) {
   #footer {
     flex-direction: column;
@@ -176,8 +186,6 @@ body {
     display: block;
     width: 100%;
     text-align: center;
-    padding: 5px;
-    
+    padding: 5px; 
   }
-
 }
