@@ -7,28 +7,69 @@
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
         <title>TOP Google Home Project</title>
     </head>
-    <body>
-<!--Top 'nav' bar-->
-    <ul id="navbar">
-        <!--left column in navbar-->
-        <li class="float-left"><a href="#" target="">About</a></li>
-        <li class="float-left"><a href="#" target="">Store</a></li>
-        <!--right column in navbar-->
-        <li class="float-right"><a class="btn" href="#" target="">Sign In</a><li> 
-        <li class="float-right"><a class="" href="">Apps</a></li>
-        <li class="float-right"><a href="#" target="">Images</a></li>
-        <li class="float-right"><a href="#" target="">Gmail</a></li>        
-    </ul>
-<!--Img container for logo below-->
-        <div class="img-container">
-            <img id="main-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
-        </div>
-<!--Search text field-->
-        <div class="searchbox-container">
-            <input id="textfield" type="text">
-        </div>
-        <br>
-                              
     
-    </body>
+<body>
+
+<!--Top 'nav' bar-->
+<nav id="navbar">
+    <ul class="nav left">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Store</a></li>
+    </ul>
+    <ul class="nav right">
+        <li><a href="#">Gmail</a></li>
+        <li><a href="#">Images</a></li>
+        <li><a href="#"><div class="app-img"></div></a></li>
+        <li><input class="btn" type="button" value="Sign In" onclick=""></li>
+    </ul>
+</nav>
+
+<!--Img container for logo below-->
+    <div class="img-container">
+        <img id="main-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
+    </div>
+<!--Search text field-->
+    <div class="searchbox-container">
+        <input id="textfield" type="text">
+    </div>
+    <div id="btn-container"> 
+        <input class="search-btn" type="submit" value="Google Search">
+        <input class="search-btn" type="submit" value="I'm Feeling Lucky">
+    </div>  
+    <a class="trend-link" href=""><p style="text-align:center">See the top search trends of 2020</p></a> 
+<!--Footer section-->                  
+    <footer id="footer">
+        <!--
+        <ul id="footer" class="">
+            <li class="footer-links float-left">Advertising</li>
+            <li class="footer-links float-left">Business</li>
+            <li class="footer-links float-left">How Search works</li>
+            <li class="footer-links float-center">Carbon neutral since 2007</li>
+            <li class="footer-links float-right">Privacy</li>
+            <li class="footer-links float-right">Terms</li>
+            <li class="footer-links float-right">Settings</li>
+        </ul>
+    -->
+<!--footer left column-->
+    <div class="footer-container left">
+        <ul class="footer-links">
+            <li><a class="footer-links" href="#">Advertising</a></li>
+            <li><a class="footer-links" href="#">Business</a></li>
+            <li><a class="footer-links" href="#">How Search works</a></li>
+        </ul>
+    </div>
+<!--center column-->
+<!--footer right column-->
+    <div class="footer-container right">
+        <ul class="footer-links">
+            <li><a class="footer-links" href="#">Privacy</a>
+            </li>
+            <li><a class="footer-links" href="#">Terms</a>
+            </li>
+            <li><a class="footer-links" href="#">Settings</a>
+            </li>
+        </ul>
+    </div>
+    </footer>
+</body>
 </html>

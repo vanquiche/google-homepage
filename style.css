@@ -1,24 +1,24 @@
-*, body {
-  box-sizing: border-box;
+body {
   font-family: arial, sans-serif;
   font-size: 13px;
   /*margin-top: 20px;*/
   margin-right: 20px;
   margin-left: 20px;
+  background: #fff;
+}
+* {
+  box-sizing: border-box;
 }
 #navbar {
-  display: block;
+  display: flex;
   box-sizing: border-box;
-  background-color: transparent;
+  width: 100%;
   height: 50px;
-  padding-top: 8px;
-  padding-bottom: 10px;
-  margin-top: 20px;
-  background-color: lightgreen;
+  margin-top: 5px;
 }
 #navbar a {
   text-decoration: none;
-  color: rgba(0,0,0,0.87);
+  color: #202124;
 }
 #navbar a:hover {
   cursor: pointer;
@@ -31,10 +31,14 @@
   margin-right:15px;
   margin-left: 0;
 }
-/*class pushes items on the navbar to the left*/
-.float-left {
-  float: left;
+.nav {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
 }
+/*class pushes items on the navbar to the left*/
 /*class pushes items on the navbar to the right*/
 .float-right {
   float: right;
@@ -42,9 +46,13 @@
 /*class for 'sign in' button*/
 .btn {
   background-color:#4285f4;;
-  padding: 10px 20px;
-  width: 50px;
+  height: 30px;
+  width: 69px;
   border-radius: 3px;
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
 }
 .img-container {
   display: flex;
@@ -53,21 +61,33 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+  padding-top: 80px;
+  padding-bottom: 35px;
 }
 #main-logo {
   max-width: 100%;
 }
 .searchbox-container {
-  display: block;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  width: 100%;
+  max-width: 500px;
+  padding: 5px;
+  margin: auto;
+  border: 1px solid #dfe1e5;
+  border-radius: 30px;
 } 
+/*drop shadow on:hover search box*/
+.searchbox-container:hover {
+  box-shadow: 0px 0px 2px rgb(207, 206, 206);
+}
 /*Search box here*/
 #textfield {
-  diplay: flex;
+  display: flex;
   height: 34px;
   line-height: 34px;
-  width: 270px;
+  width: 427px;
+  border: none;
 }
 /*class for app icon that should be on the Navbar*/
 .app-img {
@@ -78,4 +98,86 @@
   border: 0;
   text-decoration: none;
   outline: none;
+}
+#btn-container {
+  display: flex; 
+  width: 100%; 
+  justify-content: center;
+}
+/*Search buttons*/
+.search-btn {
+  height: 35px;
+  padding: 0 15px;
+  margin: 25px 6px;
+  border: none;
+  border-radius: 3px;
+  background-color:#f8f9fa;
+  border: 1px solid #fff;
+}
+/*Search button properties*/
+.search-btn:hover {
+  border: 1px solid #dadce0;
+}
+.trend-link {
+  text-decoration: none;
+}
+.trend-link p {
+  color: #1a0dab;
+}
+.trend-link:hover {
+  text-decoration: underline;
+}
+#footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  height: auto;
+  width: 100%;
+  background-color: rgb(233, 233, 233);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+/*Footer properties*/
+.footer-links {
+  color: #747474;
+  text-decoration: none;
+}
+.footer-links a {
+  text-decoration: none;
+}
+.footer-links li {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 12px;
+}
+.footer-container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+}
+/*Class to move content left and right*/
+.right {
+  justify-content: right;
+}
+.left {
+  justify-content: left;
+}
+/*Media Queries*/
+@media only screen and (max-width: 600px) {
+  #footer {
+    flex-direction: column;
+  }
+  .footer-container {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    
+  }
+
 }
