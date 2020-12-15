@@ -1,7 +1,6 @@
 body {
   font-family: arial, sans-serif;
   font-size: 13px;
-  /*margin-top: 20px;*/
   margin-right: 20px;
   margin-left: 20px;
   background: #fff;
@@ -38,11 +37,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-/*class pushes items on the navbar to the left*/
-/*class pushes items on the navbar to the right*/
-.float-right {
-  float: right;
-}
 /*class for 'sign in' button*/
 .btn {
   background-color:#4285f4;;
@@ -64,6 +58,7 @@ body {
   padding-top: 85px;
   padding-bottom: 35px;
 }
+/*Google logo*/
 #main-logo {
   max-width: 100%;
 }
